@@ -21,6 +21,7 @@ func create_server():
 	var host = NetworkedMultiplayerENet.new()
 	host.create_server(DEFAULT_PORT, MAX_PLAYERS)
 	get_tree().set_network_peer(host)
+	print("Running. Waiting for clients...")
 
 
 # Callback from SceneTree, called when client connects
