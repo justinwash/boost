@@ -6,6 +6,9 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="VBox" type="VBoxContainer" parent="."]
 margin_left = 403.958
@@ -50,15 +53,4 @@ text = "Join"
 margin_top = 358.0
 margin_right = 108.0
 margin_bottom = 372.0
-
-[node name="Panel" type="Panel" parent="."]
-visible = false
-margin_left = 372.0
-margin_top = 128.0
-margin_right = 559.0
-margin_bottom = 404.0
-
-[node name="Players" type="RichTextLabel" parent="Panel"]
-margin_right = 187.0
-margin_bottom = 274.0
 [connection signal="pressed" from="VBox/JoinButton" to="." method="_on_JoinButton_pressed"]
